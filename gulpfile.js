@@ -1,11 +1,9 @@
 'use strict';
-var path = require('path');
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 var excludeGitignore = require('gulp-exclude-gitignore');
 var mocha = require('gulp-mocha');
 var istanbul = require('gulp-istanbul');
-var nsp = require('gulp-nsp');
 var plumber = require('gulp-plumber');
 
 function staticLint() {
@@ -14,10 +12,6 @@ function staticLint() {
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
-}
-
-function doNsp(cb) {
-  nsp({package: path.resolve('package.json')}, cb);
 }
 
 function preTest() {
@@ -51,5 +45,5 @@ function watch() {
 }
 
 exports.watch = watch;
-exports.prepublishOnly = doNsp;
+exports.prepublishOnly = gulp.series(staticLint, test);
 exports.default = gulp.series(staticLint, test);
