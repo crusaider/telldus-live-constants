@@ -1,4 +1,5 @@
-# telldus-live-constants [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# telldus-live-constants [![NPM version][npm-image]][npm-url] ![Build status](https://github.com/crusaider/telldus-live-constants/workflows/Build%20on%20push/badge.svg?branch=master)[![Dependency Status][daviddm-image]][daviddm-url]
+
 > NPM package containing constants used in communication with the Telldus live rest API. Extracted from https://github.com/jornare/node-live-telldus.
 
 ## Installation
@@ -10,12 +11,12 @@ $ npm install --save telldus-live-constants
 ## Usage
 
 ```js
-var telldusLiveConstants = require('telldus-live-constants');
+var telldusLiveConstants = require("telldus-live-constants");
 ```
+
 ## License
 
 MIT © [Jonas Andreasson](https://twitter.com/Crusaider)
-
 
 [npm-image]: https://badge.fury.io/js/telldus-live-constants.svg
 [npm-url]: https://npmjs.org/package/telldus-live-constants
