@@ -37,7 +37,7 @@
   },
   "repository": "crusaider/telldus-live-constants",
   "scripts": {
-    "prepublishOnly": "gulp prepublish",
+    "prepublishOnly": "gulp prepublishOnly",
     "test": "gulp"
   },
   "license": "MIT"
