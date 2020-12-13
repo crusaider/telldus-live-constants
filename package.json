@@ -1,6 +1,6 @@
 {
   "name": "telldus-live-constants",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NPM package containing constants used in communication with the Telldus live rest API. Extracted from https://github.com/jornare/node-live-telldus.",
   "homepage": "",
   "author": {
@@ -18,16 +18,16 @@
     "home-automation"
   ],
   "devDependencies": {
-    "eslint": "^3.1.1",
-    "eslint-config-xo-space": "^0.15.0",
-    "gulp": "^3.9.0",
-    "gulp-eslint": "^3.0.1",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-line-ending-corrector": "^1.0.1",
-    "gulp-istanbul": "^1.0.0",
-    "gulp-mocha": "^3.0.1",
-    "gulp-plumber": "^1.0.0",
-    "gulp-nsp": "^2.1.0"
+    "eslint": "^7.15.0",
+    "eslint-config-xo-space": "^0.25.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-exclude-gitignore": "^1.2.0",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-istanbul": "^1.1.3",
+    "gulp-mocha": "^7.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-nsp": "^3.0.1"
   },
   "eslintConfig": {
     "extends": "xo-space",
@@ -37,7 +37,7 @@
   },
   "repository": "crusaider/telldus-live-constants",
   "scripts": {
-    "prepublish": "gulp prepublish",
+    "prepublishOnly": "gulp prepublish",
     "test": "gulp"
   },
   "license": "MIT"
